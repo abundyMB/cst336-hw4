@@ -1,5 +1,3 @@
-const NUM_PAGES = 5;
-
 const express = require("express");
 const app = express();
 app.engine('html', require('ejs').renderFile);
@@ -10,20 +8,17 @@ app.get("/", function(req, res) {
    res.render("index.html"); 
 });
 
-app.get("/mercury", function(req, res) {
-   res.render("mercury.html"); 
+app.get("/assistants", function(req, res) {
+   res.render("assistants.html"); 
 });
 
-app.get("/venus", function(req, res) {
-   res.render("venus.html"); 
+app.get("/appliances", function(req, res) {
+   res.render("appliances.html"); 
 });
 
-app.get("/earth", function(req, res) {
-   res.render("earth.html"); 
-});
-
-app.get("/pluto", function(req, res) {
-   res.render("pluto.html"); 
+app.get("/fitness", function(req, res) {
+   res.render("fitness.html"); 
+   res.render("fileToRender.ejs", {"variableName":value});
 });
 
 // starting server

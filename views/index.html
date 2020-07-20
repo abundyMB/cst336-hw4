@@ -1,15 +1,5 @@
 <!DOCTYPE html>
-<html lang>
-
-    <head>
-        <meta charset="UTF-8">
-        <title>The Internet of Things</title>
-        
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
+<%- include('partials/header.ejs') %>
         <header> 
             <h1> The Internet of Things </h1>
         </header>
@@ -70,21 +60,4 @@
             <a href="https://www.ariasystems.com/blog/internet-things-quotes-consider/" 
              target="_blank">The &apos;Internet of Things&apos; Quotes to Consider</a>
         </div>
-        
-        <!-- This is the footer -->
-        <!-- The footer goes inside the body but not always -->
-        <footer>
-            <hr>CST336 Internet Programming. 2020&copy; Bundy <br />
-             <strong>Disclaimer:</strong> This webpage is for academic purporses only.
-            
-            <figure>
-                <img src="img/csumb_logo.png" alt="CSUMB Logo" />
-            </figure>
-            
-        </footer>
-        <!-- closing footer -->
-        
-    </body>
-    <!-- closing body -->
-
-</html>
+    <%- include('partials/footer.ejs') %>
