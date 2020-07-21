@@ -35,10 +35,6 @@ nav a:link {
     color: #1655D3;
 }
 
-nav a:visited {
-    color: #EA3320;
-}
-
 nav .current {
     border-bottom:2px red solid;
     font-size: 1.8em;
@@ -55,10 +51,6 @@ main {
     line-height: 1.2em;
 }
 
-abbr {
-    font-style: oblique;
-}
-
 img {
     display: block;
     margin-left: auto;
@@ -68,8 +60,9 @@ img {
 }
 
 figcaption {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: gray;
+    text-align: center;
 }
 
 dl {
@@ -92,7 +85,7 @@ dd {
 blockquote {
     font-style: italic;
     line-height: 1.2em;
-    font-size: 2em;
+    font-size: 1.2em;
     color: gray;
 }
 

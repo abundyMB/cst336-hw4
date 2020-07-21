@@ -4,12 +4,6 @@
             <h1> Home Appliances </h1>
         </header>
         <hr />
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="assistants.html">Virtual Assistants</a>
-            <a class="current" href="appliances.html">Appliances</a>
-            <a href="fitness.html">Fitness</a>
-        </nav>
         
         <br /> <br />
         
@@ -19,7 +13,7 @@
                 <img src="img/appliances.jpeg" alt="Smarthome"/>
             </figure>
             
-            <div>
+            <div class="px-3">
                 <h2>Intro to Smart Home Devices</h2>
                 <p>
                     Home smart devices are perhaps the most common of all the devices 
@@ -39,6 +33,7 @@
                     functionality or another. Still more devices allow for control 
                     over electricity use, lighting, and temperature control. 
                 </p>
+                <br>
                 
                 <h3>Home Device Examples:</h3>
                 <dl>
@@ -52,15 +47,19 @@
                   <dd>- ecobee4</dd>
                   <dd>- SensorPush</dd>
                 </dl>
+                <br>
+                
+                <%- include('partials/fakerData.ejs') %>
+                <br>
+                
+                <p>Sources: </p>
+                <div id="sources">
+                    <a href="https://www.postscapes.com/internet-of-things-award/connected-home-products/" 
+                     target="_blank">IoT Home Guide</a>
+                </div>
             </div>
         </main>
         
         <br />
-        
-        <p>Sources: </p>
-        <div id="sources">
-            <a href="https://www.postscapes.com/internet-of-things-award/connected-home-products/" 
-             target="_blank">IoT Home Guide</a>
-        </div>
         
     <%- include('partials/footer.ejs') %>

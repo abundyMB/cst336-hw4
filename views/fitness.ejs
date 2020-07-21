@@ -2,14 +2,6 @@
 <%- include('partials/header.ejs') %>
         <header> 
             <h1> Fitness </h1>
-        </header>
-        <hr />
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="assistants.html">Virtual Assistants</a>
-            <a href="appliances.html">Appliances</a>
-            <a class="current" href="fitness.html">Fitness</a>
-        </nav>
         
         <br /> <br />
         
@@ -19,7 +11,7 @@
                 <img src="img/fitness.jpeg" alt="Smart Fitness Devices" />
             </figure>
             
-            <div>
+            <div class="px-3">
                 
                 <h2> Intro to Smart Fitness </h2>
                 <p>
@@ -39,7 +31,7 @@
                     or even utilizing virtual reality to allow runners on treadmills to
                     jog through breathtaking vistas.  
                 </p>
-                
+                <br>
                 <h3>Fitness Device Examples:</h3>
                 <dl>
                   <dt>Wearables</dt>
@@ -49,16 +41,21 @@
                   <dd>- Peloton</dd>
                   <dd>- Tempo Fitness</dd>
                 </dl>
+                <br>
+                
+                <%- include('partials/fakerData.ejs') %>
+                <br><br>
+                
+                <p>Sources: </p>
+                <div id="sources">
+                    <a href="https://www.iotforall.com/iot-future-fitness/" 
+                     target="_blank">How IoT Is Shaping the Future of Fitness</a>
+                </div>
             </div>
-            
         </main>
         
         <br />
         
-        <p>Sources: </p>
-        <div id="sources">
-            <a href="https://www.iotforall.com/iot-future-fitness/" 
-             target="_blank">How IoT Is Shaping the Future of Fitness</a>
-        </div>
+        
         
     <%- include('partials/footer.ejs') %>

@@ -4,27 +4,20 @@
             <h1> Virtual Assistants </h1>
         </header>
         <hr />
-        <nav>
-            <a href="index.html">Home</a>
-            <a class="current" href="assistants.html">Virtual Assistants</a>
-            <a href="appliances.html">Appliances</a>
-            <a href="fitness.html">Fitness</a>
-        </nav>
         
         <br /> <br />
         
         <main>
             
-            <div>
+            <div class="px-3">
                 <h2>Intro to Virtual Assistants</h2>
                 <p>
                     One of the most visible and prevalent of IoT devices is the virtual 
                     home assistant, usually manifesting as a smart speaker. 
-                    A <abbr title="Virtual Home Assistant">VHA</abbr>s allows 
-                    users to access not only a multitude of features 
-                    that come by default with these devices, but also to connect other
-                    <a class="embedded" href="appliances.html">smart home devices</a> 
-                    as well. 
+                    A virtual home assistant(VHA) allows users to access not only a 
+                    multitude of features that come by default with these devices, but 
+                    also to connect other <a class="embedded" href="appliances.html">
+                    smart home devices</a> as well. 
                 </p>
                 
                 <br />
@@ -59,6 +52,7 @@
                     <img src="img/google.jpeg" alt="Google Home" />
                     <figcaption>Google Home</figcaption>
                 </figure>
+                <br>
                 
                 <h3>VHA Examples:</h3>
                 <dl>
@@ -67,19 +61,23 @@
                   <dd>- Google Assistant</dd>
                   <dd>- Siri</dd>
                 </dl>
+                <br>
+                
+                <%- include('partials/fakerData.ejs') %>
+                <br><br>
+                
+                <p>Sources: </p>
+                <div id="sources">
+                    <a href="https://www.lifewire.com/virtual-assistants-4138533" 
+                     target="_blank">What a Virtual Assistant is and How It Works</a>
+                    <br />
+                    <a href="https://www.digitaltrends.com/home/what-is-amazons-alexa-and-what-can-it-do/" 
+                     target="_blank">What Exactly is Alexa?</a>
+                </div>
             </div>
             
         </main>
         
         <br />
-        
-        <p>Sources: </p>
-        <div id="sources">
-            <a href="https://www.lifewire.com/virtual-assistants-4138533" 
-             target="_blank">What a Virtual Assistant is and How It Works</a>
-            <br />
-            <a href="https://www.digitaltrends.com/home/what-is-amazons-alexa-and-what-can-it-do/" 
-             target="_blank">What Exactly is Alexa?</a>
-        </div>
         
     <%- include('partials/footer.ejs') %>

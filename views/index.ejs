@@ -4,12 +4,6 @@
             <h1> The Internet of Things </h1>
         </header>
         <hr />
-        <nav>
-            <a class="current" href="index.html">Home</a>
-            <a href="assistants.html">Virtual Assistants</a>
-            <a href="appliances.html">Appliances</a>
-            <a href="fitness.html">Fitness</a>
-        </nav>
         
         <br /> <br />
         
@@ -19,8 +13,8 @@
                 <img src="img/iot.png" alt="The Internet of Things" />
             </figure>
             
-            <h2> Intro to the <abbr title="Internet of Things">IoT</abbr> </h2>
-            <div>
+            <h2> Intro to the IoT</h2>
+            <div class="px-3">
                 <p>
                     The last few years have seen smarter and more powerful technology 
                     enter our homes, places of work, and public spaces. As computing 
@@ -43,21 +37,23 @@
                     technology becomes cheaper and easier to acquire and integrate 
                     into the lives of those who use them.
                 </p>
+                <br>
+                
+                <%- include('partials/fakerQuote.ejs') %>
+                <br><br>
+                
+                <p>Sources: </p>
+                <div id="sources">
+                    <a href="https://www.wired.co.uk/article/internet-of-things-what-is-explained-iot" 
+                     target="_blank">What is the Internet of Things? WIRED explains</a>
+                    <br />
+                    <a href="https://www.ariasystems.com/blog/internet-things-quotes-consider/" 
+                     target="_blank">The &apos;Internet of Things&apos; Quotes to Consider</a>
+                </div>
             </div>
-            
-            <blockquote>&quot;If you think that the internet has changed your life, think 
-            again. The IoT is about to change it all over again!&quot;</blockquote>
-            - Brendan O&apos;Brien, Chief Architect & Co-Founder, Aria Systems
         </main>
         
         <br /> 
         
-        <p>Sources: </p>
-        <div id="sources">
-            <a href="https://www.wired.co.uk/article/internet-of-things-what-is-explained-iot" 
-             target="_blank">What is the Internet of Things? WIRED explains</a>
-            <br />
-            <a href="https://www.ariasystems.com/blog/internet-things-quotes-consider/" 
-             target="_blank">The &apos;Internet of Things&apos; Quotes to Consider</a>
-        </div>
+        
     <%- include('partials/footer.ejs') %>

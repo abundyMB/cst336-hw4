@@ -1,11 +1,3 @@
-
-
-function generateFakeData() {
-    let fakeData = require('faker');
-    let randomName = fakeData.name.findName();
-
-}
-
 function findCurrentPage() {
     const NUM_NAV_LINKS = document.getElementsByClassName("navPage").length;
     
